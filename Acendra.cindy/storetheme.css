@@ -1,9 +1,0 @@
-:root {
-    --color-offwhite: #f4f4f4;
-}
-
-body {
-    background-color: var(--color-offwhite);
-    margin: 0;
-    font-family: sans-serif; /* Optional: for a smoother default font */
-}
