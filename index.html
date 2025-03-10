@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/storetheme.css">
+</head>
+<body>
+
+<!-- Header with Navbar -->
+<header class="navbar">
+    <div class="navbar-container">
+        <!-- Left Section: Logo + Search Bar -->
+        <div class="left-section">
+            <div class="logo-container">
+                <img src="img/logo.svg" alt="Company Logo">
+            </div>
+
+            <!-- Search Form -->
+            <div class="form-control">
+                <form>
+                    <div class="hotdog">
+                        <span>&equiv;</span>
+                        <input type="search" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Centered Title -->
+        <h1 class="navbar-title">Schedule Your Cards Now!</h1>
+
+        <!-- Right Section: Navigation -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Sign In + Cart Container -->
+<div class="sign-in-cart-container">
+    <a href="#login-form" class="sign-in-link">Sign In</a>
+
+    <!-- Shopping Cart Icon -->
+    <div class="cart-icon">
+        <img src="img/cart.svg" alt="Shopping Cart">
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Product Grid -->
+<div class="grid-container">
+    <div class="product">
+        <figure class="figure">
+            <img src="img/wedding.jpeg" alt="Wedding Invitation">
+            <figcaption>
+                <h4>WEDDING</h4>
+                <p class="price">$19.99</p>
+                <div class="favorite" onclick="toggleHeart(this)">
+                    <span class="heart">&#10084;</span>
+                </div>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="product">
+        <figure class="figure">
+            <img src="img/birthday.jpeg" alt="Birthday Invitation">
+            <figcaption>
+                <h4>BIRTHDAY</h4>
+                <p class="price">$14.99</p>
+                <div class="favorite" onclick="toggleHeart(this)">
+                    <span class="heart">&#10084;</span>
+                </div>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="product">
+        <figure class="figure">
+            <img src="img/Graduation.jpeg" alt="Graduation Invitation">
+            <figcaption>
+                <h4>GRADUATION</h4> 
+                <p class="price">$24.99</p>
+                <div class="favorite" onclick="toggleHeart(this)">
+                    <span class="heart">&#10084;</span>
+                </div>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="product">
+        <figure class="figure">
+            <img src="img/LOVE.jpeg" alt="LOVE">
+            <figcaption>
+                <h4>VALENTINES</h4> 
+                <p class="price">$24.99</p>
+                <div class="favorite" onclick="toggleHeart(this)">
+                    <span class="heart">&#10084;</span>
+                </div>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="product">
+        <figure class="figure">
+            <img src="img/babyshower.jpeg" alt="babyshower">
+            <figcaption>
+                <h4>BABYSHOWER</h4> 
+                <p class="price">$24.99</p>
+                <div class="favorite" onclick="toggleHeart(this)">
+                    <span class="heart">&#10084;</span>
+                </div>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="product">
+        <figure class="figure">
+            <img src="img/CORPORATE.jpeg" alt="CORPORATE">
+            <figcaption>
+                <h4>CORPORATE</h4> 
+                <p class="price">$24.99</p>
+                <div class="favorite" onclick="toggleHeart(this)">
+                    <span class="heart">&#10084;</span>
+                </div>
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+
+
+
+
+<!-- Printed Wedding Invitations -->
+<h1>Printed wedding invitations</h1>
+<div class="container">
+    <img src="img/PRINTED.jpeg" alt="PRINTED">
+</div>
+
+<!-- QR Code Invites -->
+<div class="qr-code-container">
+    <img src="img/qrcode.jpeg" alt="QR Code Heart">
+    <div class="qr-code-text">
+        <h2>QR Code Invites</h2>
+        <p>Send personalized digital invitations with a scannable QR code for instant access to event details.</p>
+    </div>
+</div>
+
+<!-- Concert Ticket Section -->
+<div class="concert-ticket">
+    <h2>A Special Night with My Favorite Person</h2>
+    <p>
+        This wasn’t just a concert ticket—it was a ticket to <strong>unforgettable memories</strong>.
+        A night filled with music, laughter, and love, seeing our <strong>favorite singer together.</strong>
+        Sometimes, the best gifts aren’t things, but <strong>moments spent with the ones we love most.</strong>
+    </p>
+    <div class="ticket-container" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <img src="img/concert.jpg" alt="Concert">
+    </div>
+</div>
+
+<!-- Reviews Gallery -->
+<div class="gallery-container">
+    <button class="prev" onclick="prevImage()">&#10094;</button>
+
+    <div class="gallery">
+        <img src="img/bottle1.jpg" class="gallery-image active" alt="Bottle Label Review 1">
+        <img src="img/bottle2.png" class="gallery-image" alt="Bottle Label Review 2">
+        <img src="img/bottle3.png" class="gallery-image" alt="Bottle Label Review 3">
+       <img src="img/bottle4.png" class="gallery-image" alt="Bottle Label Review 3">
+
+    </div>
+
+    <button class="next" onclick="nextImage()">&#10095;</button>
+
+    <!-- Star Rating -->
+    <div class="rating">
+        &#9733;&#9733;&#9733;&#9733;&#9733;
+    </div>
+</div>
+
+
+
+ <!-- User Login Form -->
+<form class="login-form">
+    <!-- Username Field -->
+    <label class="form-label" for="username">Username</label>
+    <input type="text" id="username" placeholder="Enter your username" class="form-input" required>
+
+    <!-- Password Field -->
+    <label class="form-label" for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter your password" class="form-input" required>
+
+    <!-- Forgot Password Link -->
+    <div class="forgot-password">
+        <a href="#">Forgot Password?</a>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="form-button">Sign In</button>
+</form>
+
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove("active"); 
+            if (i === index) {
+                slide.classList.add("active"); 
+            }
+        });
+    }
+
+    function nextSlide() {
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlide(slideIndex);
+    }
+
+    function prevSlide() {
+        slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+        showSlide(slideIndex);
+    }
+
+    // Show first slide on page load
+    showSlide(slideIndex);
+</script>
+
+
+
+<!-- JavaScript for Heart Click -->
+<script>
+    function toggleHeart(element) {
+        const heart = element.querySelector('.heart');
+        heart.classList.toggle('selected'); // Toggles red color when clicked
+    }
+</script>
+
+
+<script>
+    function zoomIn(element) {
+        element.classList.add("zoomed"); // Adds zoom effect on hover
+    }
+
+    function zoomOut(element) {
+        element.classList.remove("zoomed"); // Removes zoom effect when mouse leaves
+    }
+    </script>
+
+<script>
+    let index = 0;
+    const images = document.querySelectorAll(".gallery-image");
+
+    function showImage(i) {
+        images.forEach(img => img.classList.remove("active"));
+        images[i].classList.add("active");
+    }
+
+    function nextImage() {
+        index = (index + 1) % images.length;
+        showImage(index);
+    }
+
+    function prevImage() {
+        index = (index - 1 + images.length) % images.length;
+        showImage(index);
+    }
+
+    // Show first image on page load
+    showImage(index);
+</script>
+
+
+
+</div>
+
+
+</script>
+</body>
+</html>
