@@ -1,0 +1,155 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f8fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+:root {
+  --primary: #004e64;
+  --accent: #00a896;
+  --light: #ffffff;
+  --gray: #e0e0e0;
+  --dark: #1a1a1a;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--primary);
+  padding: 10px 20px;
+  color: var(--light);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo-container h2 {
+  color: white;
+  margin-right: 20px;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  padding: 4px 8px;
+  width: 250px;
+}
+
+.form-control input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  background: white;
+  color: var(--primary);
+}
+
+/* PRODUCT GRID */
+.grid-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.figure {
+  padding: 15px 10px 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.price {
+  padding: 0 10px 10px;
+  font-size: 18px;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+button.form-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.form-button:hover {
+  background-color: var(--accent);
+}
+
+.login-form, .container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--gray);
+}
